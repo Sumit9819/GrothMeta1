@@ -27,14 +27,15 @@ const Hero = () => {
             {/* Radial Glow */}
             <div style={{
                 position: 'absolute',
-                top: '20%',
-                right: '-10%',
-                width: '600px',
-                height: '600px',
+                top: '50%',
+                right: '15%',
+                transform: 'translate(0, -50%)',
+                width: '500px',
+                height: '500px',
                 background: 'radial-gradient(circle, var(--accent-glow) 0%, transparent 70%)',
-                filter: 'blur(60px)',
+                filter: 'blur(80px)',
                 zIndex: -1,
-                opacity: 0.5
+                opacity: 0.6
             }} />
 
             <div className="container grid" style={{ gridTemplateColumns: '1.2fr 0.8fr', alignItems: 'center' }}>
@@ -116,7 +117,7 @@ const Hero = () => {
                             zIndex: 2
                         }}>
                             <span style={{ fontSize: '3rem', fontWeight: '700', color: 'var(--text-primary)' }}>
-                                <CountUp end={98} suffix="%" />
+                                <CountUp end={99} suffix="%" />
                             </span>
                             <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Retention Rate</span>
                         </div>
