@@ -31,8 +31,8 @@ const Hero = () => {
             }} />
 
 
-            <div className="container grid" style={{ gridTemplateColumns: '1.2fr 0.8fr', alignItems: 'center' }}>
-                <div className="animate-fade-in">
+            <div className="container grid hero-grid" style={{ alignItems: 'center' }}>
+                <div className="animate-fade-in" style={{ zIndex: 2 }}>
                     <div style={{
                         display: 'inline-block',
                         padding: '0.5rem 1rem',
@@ -47,7 +47,7 @@ const Hero = () => {
                     </div>
 
                     <h1 style={{
-                        fontSize: 'clamp(3rem, 5vw, 5rem)',
+                        fontSize: 'clamp(2.5rem, 5vw, 5rem)',
                         marginBottom: '1.5rem',
                         lineHeight: '1.1'
                     }}>
@@ -75,25 +75,27 @@ const Hero = () => {
                 </div>
 
                 {/* Abstract Data Visual */}
-                <div style={{ position: 'relative', height: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }} className="animate-fade-in">
+                <div style={{ position: 'relative', height: 'auto', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }} className="animate-fade-in">
                     {/* Glow effect behind circle */}
                     <div style={{
                         position: 'absolute',
                         top: '50%',
                         left: '50%',
                         transform: 'translate(-50%, -50%)',
-                        width: '400px',
-                        height: '400px',
+                        width: '100%',
+                        maxWidth: '400px',
+                        aspectRatio: '1/1',
                         background: 'radial-gradient(circle, var(--accent-glow) 0%, transparent 70%)',
-                        filter: 'blur(80px)',
+                        filter: 'blur(60px)',
                         zIndex: 0,
                         opacity: 0.7
                     }} />
 
                     <div style={{
                         position: 'relative',
-                        width: '300px',
-                        height: '300px',
+                        width: '100%',
+                        maxWidth: '300px',
+                        aspectRatio: '1/1',
                         border: '1px solid var(--border-subtle)',
                         borderRadius: '50%',
                         display: 'flex',
@@ -113,8 +115,8 @@ const Hero = () => {
                         }} />
 
                         <div style={{
-                            width: '200px',
-                            height: '200px',
+                            width: '70%',
+                            height: '70%',
                             background: 'var(--bg-secondary)',
                             borderRadius: '50%',
                             display: 'flex',
@@ -124,7 +126,7 @@ const Hero = () => {
                             border: '1px solid var(--border-subtle)',
                             zIndex: 2
                         }}>
-                            <span style={{ fontSize: '3rem', fontWeight: '700', color: 'var(--text-primary)' }}>
+                            <span style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: '700', color: 'var(--text-primary)' }}>
                                 <CountUp end={99} suffix="%" />
                             </span>
                             <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Retention Rate</span>

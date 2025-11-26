@@ -27,6 +27,8 @@ export const ThemeProvider = ({ children }) => {
             root.style.setProperty('--border-subtle', 'rgba(0, 0, 0, 0.1)');
             root.style.setProperty('--glass-bg', 'rgba(255, 255, 255, 0.8)');
             root.style.setProperty('--glass-border', 'rgba(0, 0, 0, 0.05)');
+            root.style.setProperty('--gradient-start', '#0a0a0a');
+            root.style.setProperty('--gradient-end', '#525252');
         } else {
             root.style.setProperty('--bg-primary', '#0a0a0a');
             root.style.setProperty('--bg-secondary', '#141414');
@@ -37,6 +39,8 @@ export const ThemeProvider = ({ children }) => {
             root.style.setProperty('--border-subtle', 'rgba(255, 255, 255, 0.15)');
             root.style.setProperty('--glass-bg', 'rgba(20, 20, 20, 0.7)');
             root.style.setProperty('--glass-border', 'rgba(255, 255, 255, 0.05)');
+            root.style.setProperty('--gradient-start', '#ffffff');
+            root.style.setProperty('--gradient-end', '#a3a3a3');
         }
 
         localStorage.setItem('theme', theme);
