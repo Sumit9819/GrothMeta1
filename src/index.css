@@ -36,6 +36,10 @@
   --glass-bg: rgba(20, 20, 20, 0.7);
   --glass-border: rgba(255, 255, 255, 0.05);
   --backdrop-blur: 12px;
+
+  /* Gradients */
+  --gradient-start: #ffffff;
+  --gradient-end: #a3a3a3;
 }
 
 * {
