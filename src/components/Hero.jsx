@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import CountUp from './CountUp';
+const Hero3D = React.lazy(() => import('./Hero3D'));
 
 const Hero = () => {
     return (
@@ -11,6 +12,11 @@ const Hero = () => {
             paddingTop: '80px',
             overflow: 'hidden'
         }}>
+            {/* 3D Background */}
+            <Suspense fallback={null}>
+                <Hero3D />
+            </Suspense>
+
             {/* Background Grid */}
             <div style={{
                 position: 'absolute',
@@ -21,7 +27,7 @@ const Hero = () => {
         `,
                 backgroundSize: '40px 40px',
                 opacity: 0.1,
-                zIndex: -1
+                zIndex: -2
             }} />
 
 

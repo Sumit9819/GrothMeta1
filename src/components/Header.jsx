@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -69,6 +70,7 @@ const Header = () => {
           <Link to="/contact" className="btn btn-outline">
             Get Free Audit
           </Link>
+          <ThemeToggle />
         </nav>
 
         {/* Mobile Menu Toggle */}

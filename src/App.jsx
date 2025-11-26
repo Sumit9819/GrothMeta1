@@ -1,5 +1,7 @@
 import React, { useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import PageTransition from './components/PageTransition';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import TrustSection from './components/TrustSection';
@@ -47,6 +49,41 @@ const ScrollToTop = () => {
   return null;
 };
 
+const AnimatedRoutes = () => {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={
+          <PageTransition>
+            <Hero />
+            <TrustSection />
+            <ServicesPreview />
+            <Process />
+            <CaseStudies />
+            <Testimonials />
+            <FAQ />
+            <CTASection />
+          </PageTransition>
+        } />
+        <Route path="/services" element={<PageTransition><ServicesPage /></PageTransition>} />
+        <Route path="/services/seo" element={<PageTransition><SEOStrategyPage /></PageTransition>} />
+        <Route path="/services/ppc" element={<PageTransition><PPCPage /></PageTransition>} />
+        <Route path="/services/analytics" element={<PageTransition><AnalyticsPage /></PageTransition>} />
+        <Route path="/services/cro" element={<PageTransition><CROPage /></PageTransition>} />
+        <Route path="/work" element={<PageTransition><WorkPage /></PageTransition>} />
+        <Route path="/about" element={<PageTransition><AboutPage /></PageTransition>} />
+        <Route path="/blog" element={<PageTransition><BlogPage /></PageTransition>} />
+        <Route path="/blog/:slug" element={<PageTransition><BlogPostPage /></PageTransition>} />
+        <Route path="/contact" element={<PageTransition><ContactPage /></PageTransition>} />
+        <Route path="/privacy-policy" element={<PageTransition><PrivacyPolicyPage /></PageTransition>} />
+        <Route path="*" element={<PageTransition><NotFoundPage /></PageTransition>} />
+      </Routes>
+    </AnimatePresence>
+  );
+};
+
 function App() {
   return (
     <Router>
@@ -55,32 +92,7 @@ function App() {
         <Header />
         <main>
           <Suspense fallback={<PageLoader />}>
-            <Routes>
-              <Route path="/" element={
-                <>
-                  <Hero />
-                  <TrustSection />
-                  <ServicesPreview />
-                  <Process />
-                  <CaseStudies />
-                  <Testimonials />
-                  <FAQ />
-                  <CTASection />
-                </>
-              } />
-              <Route path="/services" element={<ServicesPage />} />
-              <Route path="/services/seo" element={<SEOStrategyPage />} />
-              <Route path="/services/ppc" element={<PPCPage />} />
-              <Route path="/services/analytics" element={<AnalyticsPage />} />
-              <Route path="/services/cro" element={<CROPage />} />
-              <Route path="/work" element={<WorkPage />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/blog" element={<BlogPage />} />
-              <Route path="/blog/:slug" element={<BlogPostPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-              <Route path="*" element={<NotFoundPage />} />
-            </Routes>
+            <AnimatedRoutes />
           </Suspense>
         </main>
         <Footer />
