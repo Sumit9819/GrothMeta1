@@ -24,19 +24,6 @@ const Hero = () => {
                 zIndex: -1
             }} />
 
-            {/* Radial Glow */}
-            <div style={{
-                position: 'absolute',
-                top: '50%',
-                right: '15%',
-                transform: 'translate(0, -50%)',
-                width: '500px',
-                height: '500px',
-                background: 'radial-gradient(circle, var(--accent-glow) 0%, transparent 70%)',
-                filter: 'blur(80px)',
-                zIndex: -1,
-                opacity: 0.6
-            }} />
 
             <div className="container grid" style={{ gridTemplateColumns: '1.2fr 0.8fr', alignItems: 'center' }}>
                 <div className="animate-fade-in">
@@ -83,6 +70,20 @@ const Hero = () => {
 
                 {/* Abstract Data Visual */}
                 <div style={{ position: 'relative', height: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }} className="animate-fade-in">
+                    {/* Glow effect behind circle */}
+                    <div style={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: '400px',
+                        height: '400px',
+                        background: 'radial-gradient(circle, var(--accent-glow) 0%, transparent 70%)',
+                        filter: 'blur(80px)',
+                        zIndex: 0,
+                        opacity: 0.7
+                    }} />
+
                     <div style={{
                         position: 'relative',
                         width: '300px',
@@ -91,7 +92,8 @@ const Hero = () => {
                         borderRadius: '50%',
                         display: 'flex',
                         alignItems: 'center',
-                        justifyContent: 'center'
+                        justifyContent: 'center',
+                        zIndex: 1
                     }}>
                         <div style={{
                             position: 'absolute',
