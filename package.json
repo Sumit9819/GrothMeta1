@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "node prerender.js",
+    "postbuild": "node -e \"process.env.VERCEL ? console.log('Skipping prerender on Vercel') : require('child_process').execSync('node prerender.js', {stdio: 'inherit'})\"",
+    "prerender": "node prerender.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
