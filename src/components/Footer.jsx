@@ -16,7 +16,7 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <h4 style={{ marginBottom: '1.5rem' }}>Services</h4>
+                        <div style={{ marginBottom: '1.5rem', fontWeight: '600', fontSize: '1.1rem', color: 'var(--text-primary)' }}>Services</div>
                         <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
                             <li><Link to="/services">SEO & Content</Link></li>
                             <li><Link to="/services">Paid Media (PPC)</Link></li>
