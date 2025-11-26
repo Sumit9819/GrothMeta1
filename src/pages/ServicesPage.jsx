@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CTASection from '../components/CTASection';
+import FAQ from '../components/FAQ';
 import { client } from '../client';
 
 const ServicesPage = () => {
@@ -91,6 +92,8 @@ const ServicesPage = () => {
                     ))}
                 </div>
             </section>
+
+            <FAQ />
 
             <CTASection />
         </div>

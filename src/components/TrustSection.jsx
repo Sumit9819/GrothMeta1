@@ -6,29 +6,7 @@ const TrustSection = () => {
         <section className="section" style={{ borderBottom: '1px solid var(--border-subtle)' }}>
             <div className="container">
 
-                {/* Trust Badges */}
-                <div style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    gap: '3rem',
-                    flexWrap: 'wrap',
-                    marginBottom: '3rem',
-                    opacity: 0.7,
-                    alignItems: 'center'
-                }}>
-                    {['Google Partner', 'Meta Business Partner', 'HubSpot Certified', 'Shopify Experts'].map((badge) => (
-                        <div key={badge} style={{
-                            fontWeight: '700',
-                            fontSize: '1.1rem',
-                            color: 'var(--text-secondary)',
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '0.5rem'
-                        }}>
-                            <span style={{ color: 'var(--accent-primary)', fontSize: '1.5rem' }}>★</span> {badge}
-                        </div>
-                    ))}
-                </div>
+                {/* Trust Badges Removed */}
 
                 <p style={{
                     textAlign: 'center',
@@ -48,7 +26,7 @@ const TrustSection = () => {
                     flexWrap: 'wrap',
                     marginBottom: '4rem'
                 }}>
-                    {['B2B SaaS', 'E-commerce', 'FinTech', 'Healthcare', 'Enterprise Tech'].map((sector) => (
+                    {['Lifestyle', 'Wellness', 'Technology', 'Hospitality', 'Construction'].map((sector) => (
                         <div key={sector} style={{
                             padding: '0.75rem 1.5rem',
                             border: '1px solid var(--border-subtle)',
@@ -75,7 +53,7 @@ const TrustSection = () => {
 
                 <div style={{ marginTop: '4rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
                     {[
-                        { label: 'Ad Spend Managed', value: 50, prefix: '$', suffix: 'M+' },
+                        { label: 'Ad Spend Managed', value: 500, prefix: '$', suffix: 'k+' },
                         { label: 'Campaigns Launched', value: 1200, suffix: '+' },
                         { label: 'Average ROI', value: 450, suffix: '%' }
                     ].map((stat) => (

@@ -42,15 +42,23 @@ const FAQ = () => {
                 <div>
                     <FAQItem
                         question="What industries do you specialize in?"
-                        answer="We primarily work with B2B SaaS, E-commerce, FinTech, and Enterprise Technology companies. Our data-driven approach is best suited for high-growth sectors."
+                        answer="We specialize in Lifestyle, Wellness, Technology, Hospitality, and Construction sectors. Our strategies are tailored to the unique dynamics of these industries."
+                    />
+                    <FAQItem
+                        question="What services do you offer?"
+                        answer="We offer a comprehensive suite of digital marketing services including SEO, PPC (Paid Media), Data Analytics, and Conversion Rate Optimization (CRO)."
                     />
                     <FAQItem
                         question="What is your minimum engagement period?"
-                        answer="We typically require a 3-month initial commitment. This allows us sufficient time to audit, strategize, execute, and gather enough data to demonstrate meaningful results."
+                        answer="We typically recommend a 3-month initial commitment. This allows us sufficient time to audit, strategize, execute, and gather enough data to demonstrate meaningful results."
                     />
                     <FAQItem
                         question="How do you report on performance?"
                         answer="We provide live dashboards (Looker Studio) accessible 24/7, along with bi-weekly strategy calls and comprehensive monthly reports focusing on ROI, ROAS, and revenue impact."
+                    />
+                    <FAQItem
+                        question="What is your onboarding process like?"
+                        answer="Our onboarding is streamlined: we start with a kickoff call to align on goals, followed by a deep-dive audit of your current assets. We then build a custom strategy roadmap within the first 2 weeks."
                     />
                 </div>
             </div>

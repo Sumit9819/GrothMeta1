@@ -24,30 +24,30 @@ const CaseStudies = () => {
     // Fallback if no data
     const displayCases = cases.length > 0 ? cases : [
         {
-            title: "TechFlow SaaS",
+            title: "Lifestyle Brand Growth",
             keyStatValue: 240,
             keyStatPrefix: "+",
             keyStatSuffix: "%",
-            keyStatLabel: "ARR Increase",
-            summary: "Scaled lead generation through programmatic SEO and LinkedIn Ads.",
-            tags: ["B2B", "SaaS"]
+            keyStatLabel: "Revenue Increase",
+            summary: "Scaled D2C lifestyle brand through influencer partnerships and paid social.",
+            tags: ["Lifestyle", "D2C"]
         },
         {
-            title: "Luxe Commerce",
+            title: "Wellness App Scale",
             keyStatValue: 8.5,
             keyStatSuffix: "x",
             keyStatLabel: "ROAS",
-            summary: "Optimized Google Shopping feed and implemented dynamic retargeting.",
-            tags: ["E-commerce", "Fashion"]
+            summary: "Optimized user acquisition for a wellness application using targeted video ads.",
+            tags: ["Wellness", "App"]
         },
         {
-            title: "FinGuard App",
+            title: "Tech Solutions B2B",
             keyStatValue: 60,
             keyStatPrefix: "-",
             keyStatSuffix: "%",
-            keyStatLabel: "CAC Reduction",
-            summary: "Revamped landing page CRO and streamlined user onboarding flow.",
-            tags: ["FinTech", "App"]
+            keyStatLabel: "Lead Cost",
+            summary: "Revamped lead generation strategy for a technology service provider.",
+            tags: ["Technology", "B2B"]
         }
     ];
 
