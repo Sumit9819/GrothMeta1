@@ -18,10 +18,10 @@ const Footer = () => {
                     <div>
                         <div style={{ marginBottom: '1.5rem', fontWeight: '600', fontSize: '1.1rem', color: 'var(--text-primary)' }}>Services</div>
                         <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-                            <li><Link to="/services">SEO & Content</Link></li>
-                            <li><Link to="/services">Paid Media (PPC)</Link></li>
-                            <li><a href="#">Twitter / X</a></li>
-                            <li><a href="#">Instagram</a></li>
+                            <li><Link to="/services/seo">SEO & Content</Link></li>
+                            <li><Link to="/services/ppc">Paid Media (PPC)</Link></li>
+                            <li><Link to="/services/smm">Social Media</Link></li>
+                            <li><Link to="/services/email-marketing">Email Marketing</Link></li>
                         </ul>
                     </div>
                 </div>

@@ -15,11 +15,9 @@ import Footer from './components/Footer';
 import NotFoundPage from './pages/NotFoundPage';
 
 // Lazy load pages for better performance
+// Lazy load pages for better performance
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
-const SEOStrategyPage = lazy(() => import('./pages/services/SEOStrategyPage'));
-const PPCPage = lazy(() => import('./pages/services/PPCPage'));
-const AnalyticsPage = lazy(() => import('./pages/services/AnalyticsPage'));
-const CROPage = lazy(() => import('./pages/services/CROPage'));
+const ServiceDetail = lazy(() => import('./pages/ServiceDetail'));
 const WorkPage = lazy(() => import('./pages/WorkPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
@@ -68,10 +66,7 @@ const AnimatedRoutes = () => {
           </PageTransition>
         } />
         <Route path="/services" element={<PageTransition><ServicesPage /></PageTransition>} />
-        <Route path="/services/seo" element={<PageTransition><SEOStrategyPage /></PageTransition>} />
-        <Route path="/services/ppc" element={<PageTransition><PPCPage /></PageTransition>} />
-        <Route path="/services/analytics" element={<PageTransition><AnalyticsPage /></PageTransition>} />
-        <Route path="/services/cro" element={<PageTransition><CROPage /></PageTransition>} />
+        <Route path="/services/:slug" element={<PageTransition><ServiceDetail /></PageTransition>} />
         <Route path="/work" element={<PageTransition><WorkPage /></PageTransition>} />
         <Route path="/about" element={<PageTransition><AboutPage /></PageTransition>} />
         <Route path="/blog" element={<PageTransition><BlogPage /></PageTransition>} />

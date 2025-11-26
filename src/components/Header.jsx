@@ -43,7 +43,7 @@ const Header = () => {
       }}
     >
       <div className="container flex-between">
-        <Link to="/" style={{ fontSize: '1.5rem', fontWeight: '700', fontFamily: 'var(--font-display)', letterSpacing: '-0.03em' }}>
+        <Link to="/" style={{ fontSize: '1.5rem', fontWeight: '700', fontFamily: 'var(--font-display)', letterSpacing: '-0.03em', color: 'var(--text-primary)', textDecoration: 'none' }}>
           GROWTHMETA<span className="text-accent">.</span>
         </Link>
 
