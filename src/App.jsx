@@ -12,6 +12,7 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import CTASection from './components/CTASection';
 import Footer from './components/Footer';
+import NotFoundPage from './pages/NotFoundPage';
 
 // Lazy load pages for better performance
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
@@ -24,7 +25,6 @@ const AboutPage = lazy(() => import('./pages/AboutPage'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
 const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
-const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'));
 
 // Loading component
