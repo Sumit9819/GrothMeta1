@@ -20,12 +20,12 @@ const Testimonials = () => {
         {
             quote: "GrowthMeta completely transformed our acquisition strategy. Our CAC dropped by 40% in just 3 months.",
             clientName: "Sarah Jenkins",
-            clientRole: "CMO, TechFlow"
+            clientRole: "CMO"
         },
         {
             quote: "The level of transparency and data depth they provide is unmatched. Finally, an agency that speaks our language.",
             clientName: "Michael Chen",
-            clientRole: "Founder, Luxe Commerce"
+            clientRole: "Founder"
         }
     ];
 

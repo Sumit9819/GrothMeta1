@@ -6,22 +6,42 @@ const ServicesPreview = () => {
         {
             title: "SEO & Content",
             desc: "Dominate search rankings with data-backed content strategies.",
-            icon: "🔍"
+            icon: (
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            )
         },
         {
             title: "Paid Media (PPC)",
             desc: "High-intent traffic acquisition with maximized ROAS.",
-            icon: "📈"
+            icon: (
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="12" y1="20" x2="12" y2="10"></line>
+                    <line x1="18" y1="20" x2="18" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="16"></line>
+                </svg>
+            )
         },
         {
             title: "Data Analytics",
             desc: "Turn raw data into actionable growth insights.",
-            icon: "📊"
+            icon: (
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                    <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                </svg>
+            )
         },
         {
             title: "Conversion (CRO)",
             desc: "Optimize user journeys to turn visitors into revenue.",
-            icon: "⚡"
+            icon: (
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+            )
         }
     ];
 

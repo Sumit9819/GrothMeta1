@@ -59,7 +59,7 @@ const CaseStudies = () => {
                         <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Proven Results</h2>
                         <p style={{ color: 'var(--text-secondary)' }}>We don't just promise growth. We engineer it.</p>
                     </div>
-                    <button className="btn btn-outline">View All Work</button>
+
                 </div>
 
                 <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
@@ -128,9 +128,7 @@ const CaseStudies = () => {
                                 ))}
                             </div>
 
-                            <div style={{ marginTop: 'auto', fontWeight: '600', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)' }}>
-                                Read Full Story <span style={{ transition: 'transform 0.2s' }}>→</span>
-                            </div>
+
                         </div>
                     ))}
                 </div>

@@ -42,9 +42,10 @@ const Header = () => {
         transition: 'all 0.3s ease'
       }}
     >
-      <div className="container flex-between">
-        <Link to="/" style={{ fontSize: '1.5rem', fontWeight: '700', fontFamily: 'var(--font-display)', letterSpacing: '-0.03em', color: 'var(--text-primary)', textDecoration: 'none' }}>
-          GROWTHMETA<span className="text-accent">.</span>
+      <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <Link to="/" style={{ fontSize: '1.5rem', fontWeight: '700', fontFamily: 'var(--font-display)', letterSpacing: '-0.03em', color: 'var(--text-primary)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <img src="/logo.png" alt="GrowthMeta Logo" style={{ height: '40px', width: 'auto' }} />
+          GROWTHMETA
         </Link>
 
         {/* Desktop Nav */}

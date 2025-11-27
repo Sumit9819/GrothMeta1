@@ -1,5 +1,6 @@
 import React from 'react';
 import CountUp from './CountUp';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -8,7 +9,7 @@ const Hero = () => {
             minHeight: '100vh',
             display: 'flex',
             alignItems: 'center',
-            paddingTop: '80px',
+            paddingTop: '140px',
             overflow: 'hidden'
         }}>
             {/* Background Grid */}
@@ -59,12 +60,12 @@ const Hero = () => {
                     </p>
 
                     <div className="flex">
-                        <button className="btn btn-primary">
+                        <Link to="/contact" className="btn btn-primary" style={{ textDecoration: 'none' }}>
                             Start Your Growth Engine
-                        </button>
-                        <button className="btn btn-outline">
-                            View Case Studies
-                        </button>
+                        </Link>
+                        <Link to="/services" className="btn btn-outline" style={{ textDecoration: 'none' }}>
+                            View Our Services
+                        </Link>
                     </div>
                 </div>
 

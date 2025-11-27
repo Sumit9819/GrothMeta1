@@ -5,10 +5,11 @@ const Footer = () => {
     return (
         <footer style={{ background: 'var(--bg-secondary)', padding: '4rem 0 2rem', borderTop: '1px solid var(--border-subtle)' }}>
             <div className="container">
-                <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', marginBottom: '4rem' }}>
+                <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', marginBottom: '4rem', gap: '2rem' }}>
                     <div>
-                        <div style={{ fontSize: '1.5rem', fontWeight: '700', fontFamily: 'var(--font-display)', marginBottom: '1rem' }}>
-                            GROWTHMETA<span className="text-accent">.</span>
+                        <div style={{ fontSize: '1.5rem', fontWeight: '700', fontFamily: 'var(--font-display)', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                            <img src="/logo.png" alt="GrowthMeta Logo" style={{ height: '32px', width: 'auto' }} />
+                            GROWTHMETA
                         </div>
                         <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', maxWidth: '250px' }}>
                             Data-driven digital marketing for ambitious brands ready to scale.
@@ -17,11 +18,20 @@ const Footer = () => {
 
                     <div>
                         <div style={{ marginBottom: '1.5rem', fontWeight: '600', fontSize: '1.1rem', color: 'var(--text-primary)' }}>Services</div>
-                        <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-                            <li><Link to="/services/seo">SEO & Content</Link></li>
-                            <li><Link to="/services/ppc">Paid Media (PPC)</Link></li>
-                            <li><Link to="/services/smm">Social Media</Link></li>
-                            <li><Link to="/services/email-marketing">Email Marketing</Link></li>
+                        <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem', color: 'var(--text-secondary)', fontSize: '0.9rem', padding: 0 }}>
+                            <li><Link to="/services/seo" style={{ color: 'inherit', textDecoration: 'none' }}>SEO & Content</Link></li>
+                            <li><Link to="/services/ppc" style={{ color: 'inherit', textDecoration: 'none' }}>Paid Media (PPC)</Link></li>
+                            <li><Link to="/services/smm" style={{ color: 'inherit', textDecoration: 'none' }}>Social Media</Link></li>
+                            <li><Link to="/services/email-marketing" style={{ color: 'inherit', textDecoration: 'none' }}>Email Marketing</Link></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div style={{ marginBottom: '1.5rem', fontWeight: '600', fontSize: '1.1rem', color: 'var(--text-primary)' }}>Contact Us</div>
+                        <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem', color: 'var(--text-secondary)', fontSize: '0.9rem', padding: 0 }}>
+                            <li>Taudaha, Kirtipur, Nepal</li>
+                            <li><a href="tel:9861040565" style={{ color: 'inherit', textDecoration: 'none' }}>9861040565</a></li>
+                            <li><a href="mailto:info@growthmeta.com" style={{ color: 'inherit', textDecoration: 'none' }}>info@growthmeta.com</a></li>
                         </ul>
                     </div>
                 </div>
