@@ -52,16 +52,15 @@ const AboutPage = () => {
                         </div>
                         <div style={{
                             height: '400px',
-                            background: 'linear-gradient(45deg, var(--bg-tertiary), var(--bg-secondary))',
                             border: '1px solid var(--border-subtle)',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            color: 'var(--text-muted)',
                             position: 'relative',
                             overflow: 'hidden'
                         }}>
-                            <div style={{ fontSize: '5rem', opacity: 0.1 }}>🚀</div>
+                            <img
+                                src="/team.jpg"
+                                alt="GrowthMeta Team"
+                                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            />
                         </div>
                     </div>
 
